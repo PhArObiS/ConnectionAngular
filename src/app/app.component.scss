@@ -1,0 +1,35 @@
+$content-color: rgb(126, 245, 235);
+$menu-color: darken($content-color, 20);
+$menu-color-hover: darken($menu-color, 20);
+
+#menu
+{
+    background-color: $menu-color;
+    height: 5vh;
+    padding: 1vh 1vw;
+    border-bottom:2px solid black;
+    
+
+    a
+    {
+        float:left;
+        display:block;
+        width:15vw;
+        font-size:3vh;
+        text-decoration: none;
+        text-align: center;
+        border-right:1px solid black; ;
+
+        &:hover 
+        {
+            background-color: $menu-color-hover;   
+        }
+    }
+}
+
+#content
+{
+    background-color:$content-color;
+    height: 80vh;
+    padding: 1vh 1vw;
+}
