@@ -1,0 +1,22 @@
+/* Resetting some styles to ensure consistency across different browsers */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;  /* Ensure padding and border are included in the element's total width and height */
+}
+
+/* Improved style for the input fields */
+.form-control {
+  width: calc(100% - 20px);  /* Adjust width calculation */
+  padding: 10px;  
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 1.5;  /* Improved line height */
+}
+
+/* Additional styles for label to ensure alignment */
+.form-group label {
+  font-size: 16px;  /* Set font size to ensure consistent text alignment */
+  line-height: 1.5;  /* Improved line height */
+}

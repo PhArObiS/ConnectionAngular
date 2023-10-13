@@ -1,6 +1,6 @@
 <div id="menu">
-  <a routerLink="" routerLinkActive="active" ariaCurrentWhenActive="page">Accueil</a>
-  <a routerLink="customers" routerLinkActive="active" ariaCurrentWhenActive="page">Clients</a>
+  <a *ngIf="security.isConnected()" routerLink="" routerLinkActive="active" ariaCurrentWhenActive="page">Accueil</a>
+  <a *ngIf="security.isConnected()" routerLink="customers" routerLinkActive="active" ariaCurrentWhenActive="page">Clients</a>
 
   <div style="clear:both;"></div>
 </div>

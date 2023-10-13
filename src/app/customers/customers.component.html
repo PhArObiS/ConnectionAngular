@@ -1,1 +1,28 @@
-<p>customers works!</p>
+<app-message></app-message>
+
+<div>
+    <table>
+        <thead>
+            <td>Prénom</td>
+            <td>Nom</td>
+            <td>Téléphone</td>
+            <td>Courriel</td>
+            <td>Adresse</td>
+            <td>Ville</td>
+            <td>État</td>
+            <td>Code postal</td>
+        </thead>
+        <tbody>
+            <tr *ngFor="let customer of customers">
+                <td>{{customer.FirstName}}</td>
+                <td>{{customer.LastName}}</td>
+                <td>{{customer.Phone}}</td>
+                <td>{{customer.Email}}</td>
+                <td>{{customer.Street}}</td>
+                <td>{{customer.City}}</td>
+                <td>{{customer.State}}</td>
+                <td>{{customer.ZipCode}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
